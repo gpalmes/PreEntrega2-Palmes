@@ -274,6 +274,7 @@ body {
 .container-grid .box-6 h2 {
     font-size: 30px;
     padding-top: 30px;
+    text-decoration: underline;
 }
 
 .container-grid .box-7 {
@@ -349,4 +350,19 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+
+
+
+.container-tienda {
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(2, 250px);
+    gap: 30px;
+    justify-content: center;
 }
