@@ -1,0 +1,374 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+
+
+}
+
+/* CSS MERCADOSHOE */
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.container-grid {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-rows: 75px 80px 150px 100% 50px 100px;
+    grid-template-areas:
+        "box-1 box-1 box-2 box-2"
+        ". box-3 box-4 ."
+        ". box-5 box-5 ."
+        ". box-6 box-6 ."
+        "box-7 box-7 box-7 box-7"
+        "box-8 box-8 box-8 box-8"
+    ;
+}
+
+.container-grid .box-1 {
+    grid-area: box-1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffc14d;
+
+}
+
+.container-grid .box-1 .logo {
+    width: 140px;
+    padding-left: 20%;
+
+}
+
+.container-grid .box-1 .redes {
+    width: 24px;
+    padding-left: 5px;
+}
+
+
+.container-grid .box-2 {
+    grid-area: box-2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #ffc14d;
+}
+
+.container-grid .box-2 p {
+    padding-right: 20%;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+
+.container-grid .box-3 {
+    grid-area: box-3;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.box-3 ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.box-3 li {
+    display: inline-flex;
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.box-3 a {
+    text-decoration: none;
+}
+
+/*
+.box-3 a:link {
+    text-decoration:none;
+    color:red;important
+
+}
+.box-3 a {
+    text-decoration:none;
+    color:black;
+
+}
+
+.box-3 a:hover {
+    text-decoration:none;
+    color:hotpink;
+}
+.box-3 a:active {
+    text-decoration:none;
+    color:blue;
+}
+*/
+
+.container-grid .box-4 {
+    grid-area: box-4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-grid .box-4 input {
+    width: 70%;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.container-grid .box-5 {
+
+    grid-area: box-5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f1f1f1;
+
+}
+
+.container-grid .box-5 div.banner {
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    border-right: 3px;
+    border-style: dotted;
+    border-color: black;
+    padding-right: 50px;
+
+}
+
+.container-grid .box-5 .img-banner {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+
+}
+
+.container-grid .box-5 .img-banner img {
+    width: 42px;
+    height: 42px;
+
+}
+
+.container-grid .box-6 {
+    grid-area: box-6;
+}
+
+.container-grid .box-6 h2 {
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.container-grid .box-7 {
+    grid-area: box-7;
+    display: flex;
+    align-items: center;
+    background-color: #ffc14d;
+    padding-left: 10%;
+}
+
+.container-grid .box-7 img.cards {
+    width: 51px;
+    height: 31px;
+    padding-right: 10px;
+
+}
+
+.container-grid .box-8 {
+    grid-area: box-8;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: aliceblue;
+    padding-left: 10%;
+
+}
+
+.container-grid .box-8 h2 {
+    font-size: 18px;
+    color: orange;
+    font-weight: bold;
+}
+
+.container-grid .box-8 input.nombre {
+    margin-left: 20px;
+    border: 3px solid #ffc14d;
+}
+
+.container-grid .box-8 input.email {
+    margin-left: 10px;
+    border: 3px solid #ffc14d;
+    ;
+}
+
+.container-grid .box-8 input.boton {
+    margin-left: 5px;
+    color: #ffc14d;
+    font-weight: bold;
+
+}
+
+
+/* GALERIA */
+
+.container-img {
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(2, 250px);
+    gap: 30px;
+    justify-content: center;
+}
+
+.container-img .box-img figure {
+    width: 100%;
+    height: 100%;
+}
+
+.container-img .box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
