@@ -146,7 +146,7 @@ body {
     display: grid;
     box-sizing: border-box;
     grid-template-columns: 1fr 4fr 4fr 1fr;
-    grid-template-rows: 75px 80px 150px 100% 50px 100px;
+    grid-template-rows: 75px 80px 150px 70% 50px 100px;
     grid-template-areas:
         "box-1 box-1 box-2 box-2"
         ". box-3 box-4 ."
@@ -337,7 +337,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 250px);
     grid-template-rows: repeat(2, 250px);
-    gap: 30px;
+    gap: 15px;
     justify-content: center;
 }
 
@@ -352,17 +352,46 @@ body {
     object-fit: cover;
 }
 
-
+.container-img .box-img:nth-child(1)
+{
+    grid-column-start: span 2;
+}
+.container-img .box-img:nth-child(3)
+{
+    grid-row-start: span 3;
+}
+.container-img .box-img:nth-child(5)
+{
+    grid-row-start: span 2;
+}
 
 
 .container-tienda {
     box-sizing: border-box;
-    width: 100%;
-    margin: auto;
-    margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(4, 250px);
+    width: 100%;
+    margin-top: 50px;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 250px);
-    gap: 30px;
-    justify-content: center;
-}
+    grid-template-areas: 
+    "box-img1 box-img2 box-img3 box-img4"
+    "box-pre1 box-pre2 box-pre3 box-pre4"
+    ;
+    gap:10px;
+    row-gap: 10px;
+ }
+ .container-tienda img {
+    width: 100%;
+    height: 100%;
+
+ }
+ .container-tienda .box-img {
+    width: 100%;
+    height: 100%;
+ }
+
+ .container-tienda .box-pre {
+    background-color: green;
+    width: 100%;
+    height: 20%;
+ }
