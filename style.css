@@ -218,28 +218,6 @@ body {
     text-decoration: none;
 }
 
-/*
-.box-3 a:link {
-    text-decoration:none;
-    color:red;important
-
-}
-.box-3 a {
-    text-decoration:none;
-    color:black;
-
-}
-
-.box-3 a:hover {
-    text-decoration:none;
-    color:hotpink;
-}
-.box-3 a:active {
-    text-decoration:none;
-    color:blue;
-}
-*/
-
 .container-grid .box-4 {
     grid-area: box-4;
     display: flex;
