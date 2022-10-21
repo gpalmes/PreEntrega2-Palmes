@@ -278,6 +278,7 @@ body {
     text-decoration: underline;
 }
 
+
 .container-grid .box-7 {
     grid-area: box-7;
     display: flex;
@@ -351,6 +352,11 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform .2s
+}
+.container-img .box-img img:hover {
+   transform: scale(1.5);
+    border: 3px double orange;
 }
 
 .container-img .box-img:nth-child(1)
@@ -393,6 +399,7 @@ body {
     width: 200px;
     height: 200px;
  }
+
  .container-tienda .box-pre {
    
     height: 60px;
@@ -404,6 +411,19 @@ body {
     text-decoration: none;
     color: orange;
 
+
+}
+.container-tienda .box-pre a:hover {
+    text-decoration: none;
+    color: red;
+    text-transform: uppercase;
+
+}
+.container-tienda .box-pre a:active {
+    text-decoration: none;
+    color: blue;
+    text-transform: uppercase;
+   
 }
 .container-tienda .box-pre p {
     text-decoration: none;
@@ -416,7 +436,7 @@ body {
 .container-tienda .box-pre .precio {
     font-weight: bold; 
     display: inline;
-    color:green;
+    color:red;
     font-size: 20px;
     padding-left: 20px;
 }
