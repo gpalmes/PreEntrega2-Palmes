@@ -211,7 +211,7 @@ body {
 .box-3 li {
     display: inline-flex;
     font-size: 18px;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 .box-3 a {
@@ -269,6 +269,7 @@ body {
 
 .container-grid .box-6 {
     grid-area: box-6;
+    
 }
 
 .container-grid .box-6 h2 {
@@ -370,28 +371,53 @@ body {
     box-sizing: border-box;
     display: grid;
     width: 100%;
+    padding-top: 20px;
     margin-top: 50px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 250px);
+    grid-template-columns: repeat(7, 200px);
+    grid-template-rows: repeat(2, 200px);
     grid-template-areas: 
     "box-img1 box-img2 box-img3 box-img4"
     "box-pre1 box-pre2 box-pre3 box-pre4"
     ;
-    gap:10px;
-    row-gap: 10px;
+    justify-content: center;
+    border-top: 1px solid black;
+    column-gap: 10px;
+    flex-wrap: wrap;
+
  }
+ .container-tienda .box-img  {
+    width: 100%;
+ }
+
  .container-tienda img {
-    width: 100%;
-    height: 100%;
-
+    width: 200px;
+    height: 200px;
  }
- .container-tienda .box-img {
-    width: 100%;
-    height: 100%;
- }
-
  .container-tienda .box-pre {
-    background-color: green;
-    width: 100%;
-    height: 20%;
+   
+    height: 60px;
+    align-items: center;
+    border:1px inset black;
+  
  }
+ .container-tienda .box-pre a {
+    text-decoration: none;
+    color: orange;
+
+}
+.container-tienda .box-pre p {
+    text-decoration: none;
+    display: inline;
+}
+.container-tienda .box-pre .precioAnt {
+    text-decoration:line-through;
+    display: inline;
+}
+.container-tienda .box-pre .precio {
+    font-weight: bold; 
+    display: inline;
+    color:red;
+    font-size: 20px;
+    padding-left: 20px;
+}
+ 
