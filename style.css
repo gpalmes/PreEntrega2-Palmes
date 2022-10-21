@@ -407,16 +407,11 @@ body {
     border:1px inset black;
   
  }
+ 
  .container-tienda .box-pre a {
     text-decoration: none;
     color: orange;
 
-
-}
-.container-tienda .box-pre a:hover {
-    text-decoration: none;
-    color: red;
-    text-transform: uppercase;
 
 }
 .container-tienda .box-pre a:active {
@@ -425,6 +420,7 @@ body {
     text-transform: uppercase;
    
 }
+
 .container-tienda .box-pre p {
     text-decoration: none;
     display: inline;
